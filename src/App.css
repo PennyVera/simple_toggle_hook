@@ -1,0 +1,61 @@
+:root {
+  --bg: #f7f7fb;
+  --text: #111827;
+  --card-bg: #ffffff;
+  --card-border: #d1d5db;
+  --button-bg: #111827;
+  --button-text: #f9fafb;
+}
+
+.app-shell {
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: var(--bg);
+  color: var(--text);
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.theme-demo-card {
+  margin-top: 1rem;
+  max-width: 520px;
+  padding: 1rem;
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  background-color: var(--card-bg);
+}
+
+.theme-toggle-btn {
+  margin-top: 0.5rem;
+  padding: 0.6rem 0.9rem;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.theme-hint {
+  margin-top: 0.75rem;
+  opacity: 0.85;
+}
+
+.app-shell.dark {
+  --bg: #111827;
+  --text: #f9fafb;
+  --card-bg: #1f2937;
+  --card-border: #374151;
+  --button-bg: #f9fafb;
+  --button-text: #111827;
+}
+
+.app-shell.light {
+  --bg: #f7f7fb;
+  --text: #111827;
+  --card-bg: #ffffff;
+  --card-border: #d1d5db;
+  --button-bg: #111827;
+  --button-text: #f9fafb;
+}
